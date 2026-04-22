@@ -1,0 +1,10 @@
+random images   : "<img src="https://picsum.photos/200/300?random=1">",
+color palette   : "https://colorhunt.co/palette/eaefefbfc9d125343fff9b51",
+
+• sass --wathc ../scss:css komutu ile izlenim sağlanır.
+
+• npm init -y ile package.json oluşturulur.
+
+• npm install sass ile sass kurulur.
+
+• npm run sass ile package.json scipt'teki sass komutu çalıştırılır.

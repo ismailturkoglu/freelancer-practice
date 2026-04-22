@@ -1,0 +1,135 @@
+/* ===================== Utilities ===================== */
+@use "variables";
+
+/* Container */
+.container {
+  max-width: variables.$max-width;
+  margin: 1rem auto;
+  padding: 0 1rem;
+}
+
+/* Background */
+.bg-light {
+  background-color: variables.$light-color;
+}
+.bg-dark {
+  background-color: variables.$dark-color;
+}
+.bg-black {
+  color: #fff;
+  background-color: variables.$black-color;
+}
+.bg-primary {
+  background-color: variables.$primary-color;
+}
+
+/* Padding-All */
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.p-4 {
+  padding: 4rem;
+}
+
+/* Padding-Y */
+.py-1 {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.py-2 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.py-3 {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+.py-4 {
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+/* Margin-All */
+.m {
+  &-1 {
+    margin: 1rem;
+  }
+  &-2 {
+    margin: 2rem;
+  }
+  &-3 {
+    margin: 3rem;
+  }
+  &-4 {
+    margin: 4rem;
+  }
+}
+
+/* Margin-Y */
+.my {
+  &-1 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  &-2 {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  &-3 {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  &-4 {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+  }
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  border: 1px solid variables.$black-color;
+  border-radius: 0.8rem;
+  background-color: variables.$light-color;
+  color: variables.$black-color;
+  padding: 0.4rem 1.6rem;
+  margin: 1rem 0;
+
+  &:hover {
+    background-color: variables.$primary-color;
+  }
+
+  &-light {
+    background-color: variables.$light-color;
+    &:hover {
+      background-color: variables.$primary-color;
+    }
+  }
+  &-dark {
+    background-color: variables.$dark-color;
+    &:hover {
+      background-color: variables.$primary-color;
+    }
+  }
+  &-black {
+    color: #fff;
+    background-color: variables.$black-color;
+    &:hover {
+      background-color: variables.$primary-color;
+    }
+  }
+  &-primary {
+    background-color: variables.$primary-color;
+    &:hover {
+      background-color: variables.$light-color;
+    }
+  }
+}
+
+/* ===================================================== */
