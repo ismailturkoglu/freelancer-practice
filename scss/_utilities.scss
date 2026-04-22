@@ -23,7 +23,7 @@
   background-color: variables.$primary-color;
 }
 
-/* Padding-All */
+/* Padding All Axes  */
 .p-1 {
   padding: 1rem;
 }
@@ -37,7 +37,7 @@
   padding: 4rem;
 }
 
-/* Padding-Y */
+/* Padding Y-Axis */
 .py-1 {
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -55,7 +55,7 @@
   padding-top: 4rem;
 }
 
-/* Margin-All */
+/* Margin All Axes */
 .m {
   &-1 {
     margin: 1rem;
@@ -71,7 +71,7 @@
   }
 }
 
-/* Margin-Y */
+/* Margin Y-Axis */
 .my {
   &-1 {
     margin-bottom: 1rem;

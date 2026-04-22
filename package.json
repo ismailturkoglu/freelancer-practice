@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch --style=expanded scss:public/css",
-    "sass1": "sass --watch --style=compressed scss:public/css"
+    "sass": "sass --watch --style=expanded scss:css",
+    "sass1": "sass --watch --style=compressed scss:css"
   },
   "keywords": [],
   "author": "",

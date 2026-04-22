@@ -75,7 +75,7 @@ p {
   background-color: #ff9b51;
 }
 
-/* Padding-All */
+/* Padding All Axes  */
 .p-1 {
   padding: 1rem;
 }
@@ -92,7 +92,7 @@ p {
   padding: 4rem;
 }
 
-/* Padding-Y */
+/* Padding Y-Axis */
 .py-1 {
   padding-bottom: 1rem;
   padding-top: 1rem;
@@ -113,7 +113,7 @@ p {
   padding-top: 4rem;
 }
 
-/* Margin-All */
+/* Margin All Axes */
 .m-1 {
   margin: 1rem;
 }
@@ -127,7 +127,7 @@ p {
   margin: 4rem;
 }
 
-/* Margin-Y */
+/* Margin Y-Axis */
 .my-1 {
   margin-bottom: 1rem;
   margin-top: 1rem;
