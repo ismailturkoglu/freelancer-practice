@@ -4,16 +4,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <!-- main css -->
     <link rel="stylesheet" href="css/main.css">
-    <title>index</title>
+    <title>index (home)</title>
 </head>
 
 <body>
+    <!-- header--home -->
+    <header class="header--home">
+        <div class="container">
+            <!-- main-nav -->
+            <nav class="main-nav  py-1">
+                <img class="main-nav__logo" src="img/logo.png" alt="">
+                <ul class="main-nav__items">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- header-content -->
+            <div class="header-content">
+                <h1>
+                    I'm İsmail Türkoğlu
+                    <span id="typewriter"></span>
+                </h1>
+                <a href="pages/about.html" class="btn my-3 p-4 py-1 animate__animated animate__swing">View My
+                    Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SCRIPTS -->
+
+    <!-- Typewriter -->
+    <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/core.js">
+    </script>
+
+    <script>
+        const app = document.getElementById("typewriter");
+
+        const typewriter = new Typewriter(app, {
+            loop: true,
+            delay: 75
+        });
+
+        typewriter
+            .typeString("Developer")
+            .pauseFor(1000)
+            .deleteAll()
+            .typeString("Designer")
+            .pauseFor(1000)
+            .deleteAll()
+            .typeString("Freelancer")
+            .pauseFor(1000)
+            .start();
+    </script>
 
 </body>
 
