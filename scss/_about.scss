@@ -1,0 +1,14 @@
+/* ======================= About ====================== */
+@use "variables";
+
+#about-a {
+  .wrap {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: 2fr 5fr;
+
+    .about-text {
+      text-align: left;
+    }
+  }
+}

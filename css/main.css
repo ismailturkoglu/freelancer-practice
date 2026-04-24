@@ -249,7 +249,9 @@ p {
   align-items: center;
 }
 
-/* header--home */
+.header {
+  /* header--home */
+}
 .header--home {
   background: linear-gradient(to bottom, rgba(73, 75, 82, 0.5960784314), rgba(116, 199, 207, 0.1607843137)), url("../img/bg.jpg") no-repeat left top/cover;
   height: 100vh;
@@ -266,6 +268,13 @@ p {
 }
 .header--home .header-content #typewriter {
   display: block;
+}
+.header {
+  /* header--small */
+}
+.header--small {
+  background: linear-gradient(to bottom, rgba(73, 75, 82, 0.5960784314), rgba(116, 199, 207, 0.1607843137)), url("../img/bg.jpg") no-repeat 30% 25%/cover;
+  color: #fff;
 }
 
 /* ======================== Home ======================= */
@@ -370,6 +379,16 @@ p {
   border: 0.1rem solid #eaefef;
   background-color: #25343f;
   color: #fff;
+}
+
+/* ======================= About ====================== */
+#about-a .wrap {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: 2fr 5fr;
+}
+#about-a .wrap .about-text {
+  text-align: left;
 }
 
 /*# sourceMappingURL=main.css.map */
