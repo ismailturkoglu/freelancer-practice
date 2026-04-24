@@ -47,4 +47,57 @@
       }
     }
   }
+
+  /* section-c */
+  &__c {
+    .process {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5rem;
+
+      i {
+        margin-bottom: 1rem;
+        width: 12rem;
+        border: 0.2rem black solid;
+        border-radius: 50%;
+        padding: 2rem;
+        transition:
+          background-color 0.5s,
+          color 0.2s;
+
+        .process__no {
+          transition:
+            background-color 0.5s,
+            color 0.2s;
+        }
+
+        &:hover {
+          background-color: variables.$primary-color;
+          color: #fff;
+        }
+
+        &:hover .process__no {
+          background-color: variables.$black-color;
+          color: #fff;
+        }
+      }
+
+      &__icon {
+        // background-color: variables.$light-color;
+        position: relative;
+      }
+      &__no {
+        width: 4rem;
+        height: 4rem;
+        padding: 1rem;
+        font-size: 2rem;
+        border: 0.2rem solid black;
+        border-radius: 50%;
+        background-color: variables.$primary-color;
+        position: absolute;
+        top: 0rem;
+        left: 8rem;
+      }
+    }
+  }
 }

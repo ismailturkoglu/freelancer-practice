@@ -1,0 +1,27 @@
+/* ======================= Footer ====================== */
+@use "variables";
+
+#main-footer {
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-size: 1.8rem;
+      letter-spacing: 0.1rem;
+      word-spacing: 0.2rem;
+    }
+  }
+  .social {
+    font-size: 3rem;
+    display: flex;
+    gap: 2rem;
+
+    i {
+      padding: 0.8rem;
+      border-radius: 50%;
+      border: 0.1rem solid variables.$light-color;
+      background-color: variables.$black-color;
+      color: #fff;
+    }
+  }
+}
