@@ -2,6 +2,7 @@
 @use "variables";
 
 #home {
+  /* section-a */
   &__a {
     .skills {
       display: grid;
@@ -13,6 +14,36 @@
       }
       h2 {
         margin-top: 2rem;
+      }
+    }
+  }
+
+  /* section-b */
+  &__b {
+    .profile {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      div {
+        padding: 3rem 0;
+
+        &:nth-child(even) {
+          background-color: variables.$dark-color;
+        }
+        &:nth-child(odd) {
+          background-color: variables.$light-color;
+        }
+      }
+
+      li {
+        &.title {
+          font-size: 2.4rem;
+        }
+
+        &.number {
+          font-size: 4rem;
+          font-weight: 800;
+        }
       }
     }
   }

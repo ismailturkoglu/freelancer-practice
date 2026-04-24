@@ -269,6 +269,9 @@ p {
 }
 
 /* ======================== Home ======================= */
+#home {
+  /* section-a */
+}
 #home__a .skills {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -279,6 +282,29 @@ p {
 }
 #home__a .skills h2 {
   margin-top: 2rem;
+}
+#home {
+  /* section-b */
+}
+#home__b .profile {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#home__b .profile div {
+  padding: 3rem 0;
+}
+#home__b .profile div:nth-child(even) {
+  background-color: #bfc9d1;
+}
+#home__b .profile div:nth-child(odd) {
+  background-color: #eaefef;
+}
+#home__b .profile li.title {
+  font-size: 2.4rem;
+}
+#home__b .profile li.number {
+  font-size: 4rem;
+  font-weight: 800;
 }
 
 /*# sourceMappingURL=main.css.map */
