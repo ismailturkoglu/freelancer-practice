@@ -1,6 +1,48 @@
 /* ======================= Home ======================= */
 @use "variables";
 
+/* main-nav */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+
+  li {
+    padding: 1rem 1.5rem;
+    letter-spacing: 2px;
+
+    .active {
+      border-color: variables.$primary-color;
+    }
+
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.5s;
+
+      &:hover {
+        border-color: variables.$light-color;
+      }
+
+      &.active {
+        border-color: variables.$primary-color;
+      }
+    }
+  }
+
+  &__logo {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  &__items {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+  }
+}
+
 /* header--home */
 .header {
   &--home {
@@ -9,48 +51,6 @@
       url("../img/bg.jpg") no-repeat left top / cover;
     height: 100vh;
     color: #fff;
-
-    /* main-nav */
-    .main-nav {
-      display: flex;
-      justify-content: space-between;
-
-      li {
-        padding: 1rem 1.5rem;
-        letter-spacing: 2px;
-
-        .active {
-          border-color: variables.$primary-color;
-        }
-
-        a {
-          color: #fff;
-          text-transform: uppercase;
-          border-bottom: 3px transparent solid;
-          padding-bottom: 0.5rem;
-          transition: border-color 0.5s;
-
-          &:hover {
-            border-color: variables.$light-color;
-          }
-
-          &.active {
-            border-color: variables.$primary-color;
-          }
-        }
-      }
-
-      &__logo {
-        width: 10rem;
-        height: 10rem;
-      }
-
-      &__items {
-        display: flex;
-        gap: 2.5rem;
-        align-items: center;
-      }
-    }
 
     /* header-content */
     .header-content {

@@ -1,0 +1,19 @@
+/* ======================== Home ======================= */
+@use "variables";
+
+#home {
+  &__a {
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 5rem;
+
+      i {
+        color: variables.$primary-color;
+      }
+      h2 {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
