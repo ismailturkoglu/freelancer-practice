@@ -36,3 +36,12 @@
     }
   }
 }
+
+/* section-c */
+#about-c {
+  .about-logos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15rem;
+  }
+}
