@@ -380,6 +380,9 @@ p {
   background-color: #25343f;
   color: #fff;
 }
+#main-footer .social i:hover {
+  background-color: #ff9b51;
+}
 
 /* ======================= About ====================== */
 /* section-a */

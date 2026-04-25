@@ -22,6 +22,10 @@
       border: 0.1rem solid variables.$light-color;
       background-color: variables.$black-color;
       color: #fff;
+
+      &:hover {
+        background-color: variables.$primary-color;
+      }
     }
   }
 }
