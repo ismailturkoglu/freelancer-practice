@@ -1,6 +1,7 @@
 /* ======================= About ====================== */
 @use "variables";
 
+/* section-a */
 #about-a {
   .wrap {
     display: grid;
@@ -9,6 +10,29 @@
 
     .about-text {
       text-align: left;
+    }
+  }
+}
+
+/* section-b */
+#about-b {
+  #progress-bar {
+    h4 {
+      text-align: left;
+      font-weight: 750;
+      color: variables.$black-color;
+    }
+
+    .inclusive {
+      width: 100%;
+      height: 2rem;
+      background-color: variables.$light-color;
+      margin-bottom: 1.5rem;
+    }
+
+    .progress {
+      height: 2rem;
+      background-color: variables.$primary-color;
     }
   }
 }
