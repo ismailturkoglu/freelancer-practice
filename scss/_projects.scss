@@ -1,0 +1,21 @@
+/* ====================== Projects ===================== */
+@use "variables";
+
+#projects {
+  .projects__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    div {
+      background-color: variables.$light-color;
+      padding-bottom: 2rem;
+    }
+
+    img {
+      width: 100%;
+      height: 20rem;
+      object-fit: cover;
+    }
+  }
+}
