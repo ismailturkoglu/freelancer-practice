@@ -45,3 +45,24 @@
     gap: 15rem;
   }
 }
+
+/* section-d */
+#about-d {
+  .references {
+    p {
+      width: 90%;
+      border: 0.1rem solid variables.$primary-color;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      padding: 1rem;
+    }
+    ul {
+      display: flex;
+      img {
+        width: 5rem;
+        height: auto;
+        border-radius: 50%;
+      }
+    }
+  }
+}

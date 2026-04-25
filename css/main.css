@@ -419,4 +419,21 @@ p {
   gap: 15rem;
 }
 
+/* section-d */
+#about-d .references p {
+  width: 90%;
+  border: 0.1rem solid #ff9b51;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+#about-d .references ul {
+  display: flex;
+}
+#about-d .references ul img {
+  width: 5rem;
+  height: auto;
+  border-radius: 50%;
+}
+
 /*# sourceMappingURL=main.css.map */
