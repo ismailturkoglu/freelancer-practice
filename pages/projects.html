@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Light Box -->
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <!-- Google Fonts -->
@@ -34,7 +36,7 @@
         </div>
     </header>
 
-    <!-- section-a -->
+    <!-- projects -->
     <section id="projects" class="text-center py-3">
 
         <div class="container">
@@ -42,48 +44,66 @@
             <div class="border-bottom"></div>
             <p class="lead">Lorem ipsum dolor sit amet.</p>
             <div class="projects__grid">
-                <div>
-                    <img src="../img/works/work-1.webp" alt="">
+                <div class="item">
+                    <a href="../img/works/work-1.webp" class="glightbox" data-gallery="projects">
+                        <img src="../img/works/work-1.webp" alt="">
+                    </a>
                     <p>Lorem, ipsum.</p>
                     <h3>Lorem, ipsum dolor.</h3>
                 </div>
-                <div>
-                    <img src="../img/works/work-2.webp" alt="">
+                <div class="item">
+                    <a href="../img/works/work-2.webp" class="glightbox" data-gallery="projects">
+                        <img src="../img/works/work-2.webp" alt="">
+                    </a>
                     <p>Lorem, ipsum.</p>
                     <h3>Lorem, ipsum dolor.</h3>
                 </div>
-                <div>
-                    <img src="../img/works/work-3.webp" alt="">
+                <div class="item">
+                    <a href="../img/works/work-3.webp" class="glightbox" data-gallery="projects">
+                        <img src="../img/works/work-3.webp" alt="">
+                    </a>
                     <p>Lorem, ipsum.</p>
                     <h3>Lorem, ipsum dolor.</h3>
                 </div>
-                <div>
-                    <img src="../img/works/work-4.avif" alt="">
+                <div class="item">
+                    <a href="../img/works/work-4.avif" class="glightbox" data-gallery="projects">
+                        <img src="../img/works/work-4.avif" alt="">
+                    </a>
                     <p>Lorem, ipsum.</p>
                     <h3>Lorem, ipsum dolor.</h3>
                 </div>
-                <div>
-                    <img src="../img/works/work-5.jpg" alt="">
+                <div class="item">
+                    <a href="../img/works/work-5.avif" class="glightbox" data-gallery="projects">
+                        <img src="../img/works/work-5.avif" alt="">
+                    </a>
                     <p>Lorem, ipsum.</p>
                     <h3>Lorem, ipsum dolor.</h3>
                 </div>
-                <div>
-                    <img src="../img/works/work-6.jpeg" alt="">
+                <div class="item">
+                    <a href="../img/works/work-6.jpeg" class="glightbox" data-gallery="projects">
+                        <img src="../img/works/work-6.jpeg" alt="">
+                    </a>
                     <p>Lorem, ipsum.</p>
                     <h3>Lorem, ipsum dolor.</h3>
                 </div>
-                <div>
-                    <img src="../img/works/work-7.webp" alt="">
+                <div class="item">
+                    <a href="../img/works/work-7.webp" class="glightbox" data-gallery="projects">
+                        <img src="../img/works/work-7.webp" alt="">
+                    </a>
                     <p>Lorem, ipsum.</p>
                     <h3>Lorem, ipsum dolor.</h3>
                 </div>
-                <div>
-                    <img src="../img/works/work-8.webp" alt="">
+                <div class="item">
+                    <a href="../img/works/work-8.webp" class="glightbox" data-gallery="projects">
+                        <img src="../img/works/work-8.webp" alt="">
+                    </a>
                     <p>Lorem, ipsum.</p>
                     <h3>Lorem, ipsum dolor.</h3>
                 </div>
-                <div>
-                    <img src="../img/works/work-9.webp" alt="">
+                <div class="item">
+                    <a href="../img/works/work-9.webp" class="glightbox" data-gallery="projects">
+                        <img src="../img/works/work-9.webp" alt="">
+                    </a>
                     <p>Lorem, ipsum.</p>
                     <h3>Lorem, ipsum dolor.</h3>
                 </div>
@@ -109,6 +129,15 @@
     <!-- SCRIPTS -->
     <!-- Jquery -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- Light Box -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <!-- Initializing Light Box -->
+    <script>
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true
+        });
+    </script>
 
 </body>
 
