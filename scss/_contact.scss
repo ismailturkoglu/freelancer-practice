@@ -1,0 +1,55 @@
+/* ====================== Contact ====================== */
+@use "variables";
+
+#contact__form {
+  .form-fields {
+    display: grid;
+    grid-template-areas:
+      "name email"
+      "subject phone"
+      "message message"
+      "submit submit";
+    gap: 1rem;
+    padding: 2rem;
+
+    #name {
+      height: 3rem;
+      padding: 1rem;
+      grid-area: name;
+    }
+    #email {
+      height: 3rem;
+      padding: 1rem;
+      grid-area: email;
+    }
+    #subject {
+      height: 3rem;
+      padding: 1rem;
+      grid-area: subject;
+    }
+    #phone {
+      height: 3rem;
+      padding: 1rem;
+      grid-area: phone;
+    }
+    #message {
+      grid-area: message;
+      height: 15rem;
+      padding: 1rem;
+    }
+    #submit {
+      height: 3rem;
+      grid-area: submit;
+      background-color: variables.$black-color;
+      color: #fff;
+
+      &:hover {
+        background-color: variables.$primary-color;
+        color: variables.$black-color;
+        transition:
+          background-color 0.5s,
+          color 0.5s;
+      }
+    }
+  }
+}

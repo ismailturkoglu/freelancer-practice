@@ -34,7 +34,25 @@
         </div>
     </header>
 
+    <!-- section-a -->
+    <section id="contact__form" class="text-center py-3">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="border-bottom"></div>
+            <p class="lead">Lorem ipsum dolor sit.</p>
+            <form>
+                <div class="form-fields">
+                    <input type="text" name="Name" id="name" placeholder="Name">
+                    <input type="email" name="Email" id="email" placeholder="Email">
+                    <input type="text" name="Subject" id="subject" placeholder="Subject">
+                    <input type="tel" name="Phone" id="phone" placeholder="Phone (05xx xxx xx xx)" maxlength="14">
+                    <textarea name="Message" id="message" placeholder="Enter message"></textarea>
+                    <input type="submit" value="Submit" id="submit">
+                </div>
 
+            </form>
+        </div>
+    </section>
 
     <!-- footer -->
     <footer id="main-footer" class="bg-black">
@@ -54,6 +72,31 @@
     <!-- SCRIPTS -->
     <!-- Jquery -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+    <!-- Input - Phone -->
+    <script>
+        const input = document.getElementById("phone");
+
+        input.addEventListener("input", (e) => {
+            let value = e.target.value;
+
+            // sadece rakam
+            value = value.replace(/\D/g, '');
+
+            // max 11 hane (TR telefon)
+            value = value.substring(0, 11);
+
+            // format: 05xx xxx xx xx
+            let formatted = '';
+
+            if (value.length > 0) formatted += value.substring(0, 4);
+            if (value.length >= 5) formatted += ' ' + value.substring(4, 7);
+            if (value.length >= 8) formatted += ' ' + value.substring(7, 9);
+            if (value.length >= 10) formatted += ' ' + value.substring(9, 11);
+
+            e.target.value = formatted;
+        });
+    </script>
 
 </body>
 

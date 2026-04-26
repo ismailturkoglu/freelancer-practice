@@ -451,6 +451,50 @@ p {
   object-fit: contain;
 }
 
+/* ====================== Contact ====================== */
+#contact__form .form-fields {
+  display: grid;
+  grid-template-areas: "name email" "subject phone" "message message" "submit submit";
+  gap: 1rem;
+  padding: 2rem;
+}
+#contact__form .form-fields #name {
+  height: 3rem;
+  padding: 1rem;
+  grid-area: name;
+}
+#contact__form .form-fields #email {
+  height: 3rem;
+  padding: 1rem;
+  grid-area: email;
+}
+#contact__form .form-fields #subject {
+  height: 3rem;
+  padding: 1rem;
+  grid-area: subject;
+}
+#contact__form .form-fields #phone {
+  height: 3rem;
+  padding: 1rem;
+  grid-area: phone;
+}
+#contact__form .form-fields #message {
+  grid-area: message;
+  height: 15rem;
+  padding: 1rem;
+}
+#contact__form .form-fields #submit {
+  height: 3rem;
+  grid-area: submit;
+  background-color: #25343f;
+  color: #fff;
+}
+#contact__form .form-fields #submit:hover {
+  background-color: #ff9b51;
+  color: #25343f;
+  transition: background-color 0.5s, color 0.5s;
+}
+
 /* ======================= Footer ====================== */
 #main-footer .footer-content {
   display: flex;
