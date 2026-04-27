@@ -454,14 +454,14 @@ p {
 /* ====================== Contact ====================== */
 #contact__form .form-fields {
   display: grid;
-  grid-template-areas: "name email" "subject phone" "message message" "submit submit";
+  grid-template-areas: "full-name email" "subject phone" "message message" "submit submit";
   gap: 1rem;
   padding: 2rem;
 }
-#contact__form .form-fields #name {
+#contact__form .form-fields #full-name {
   height: 3rem;
   padding: 1rem;
-  grid-area: name;
+  grid-area: full-name;
 }
 #contact__form .form-fields #email {
   height: 3rem;

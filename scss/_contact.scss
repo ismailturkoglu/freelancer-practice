@@ -5,17 +5,17 @@
   .form-fields {
     display: grid;
     grid-template-areas:
-      "name email"
+      "full-name email"
       "subject phone"
       "message message"
       "submit submit";
     gap: 1rem;
     padding: 2rem;
 
-    #name {
+    #full-name {
       height: 3rem;
       padding: 1rem;
-      grid-area: name;
+      grid-area: full-name;
     }
     #email {
       height: 3rem;
