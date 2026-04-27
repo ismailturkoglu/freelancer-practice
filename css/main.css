@@ -481,8 +481,9 @@ p {
 }
 #contact__form .form-fields #message {
   grid-area: message;
-  height: 15rem;
+  height: 14rem;
   padding: 1rem;
+  margin-bottom: 0.5rem;
 }
 #contact__form .form-fields #submit {
   height: 3rem;
@@ -512,7 +513,6 @@ p {
   justify-content: space-between;
 }
 #main-footer .footer-content p {
-  font-size: 1.8rem;
   letter-spacing: 0.1rem;
   word-spacing: 0.2rem;
 }
@@ -522,6 +522,7 @@ p {
   gap: 2rem;
 }
 #main-footer .social i {
+  font-size: 1.5rem;
   padding: 0.8rem;
   border-radius: 50%;
   border: 0.1rem solid #eaefef;
