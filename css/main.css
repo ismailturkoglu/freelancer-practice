@@ -452,6 +452,7 @@ p {
 }
 
 /* ====================== Contact ====================== */
+/* section-a */
 #contact__form .form-fields {
   display: grid;
   grid-template-areas: "full-name email" "subject phone" "message message" "submit submit";
@@ -493,6 +494,16 @@ p {
   background-color: #ff9b51;
   color: #25343f;
   transition: background-color 0.5s, color 0.5s;
+}
+
+/* section-b */
+#contact__info .info-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#contact__info .info-box p {
+  margin: 0;
+  padding: 0;
 }
 
 /* ======================= Footer ====================== */

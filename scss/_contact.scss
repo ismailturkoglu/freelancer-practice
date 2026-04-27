@@ -1,6 +1,7 @@
 /* ====================== Contact ====================== */
 @use "variables";
 
+/* section-a */
 #contact__form {
   .form-fields {
     display: grid;
@@ -50,6 +51,19 @@
           background-color 0.5s,
           color 0.5s;
       }
+    }
+  }
+}
+
+/* section-b */
+#contact__info {
+  .info-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    p {
+      margin: 0;
+      padding: 0;
     }
   }
 }
