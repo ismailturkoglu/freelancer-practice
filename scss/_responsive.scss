@@ -1,0 +1,195 @@
+/* ==================== Responsive ===================== */
+@use "variables";
+
+@mixin respond($size) {
+  @media (max-width: map-get(variables.$breakpoints, $size)) {
+    @content;
+  }
+}
+
+@include respond(xl) {
+  html {
+    font-size: 58%;
+    h2.section-title {
+      font-size: 2rem;
+    }
+    p.lead {
+      font-size: 2rem;
+    }
+  }
+
+  section[class*="py-"],
+  div[class*="py-"] {
+    padding: 1rem 0;
+  }
+
+  /* HOME */
+  /* section-a */
+  #home__a {
+    .skills {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  /* section-b */
+  #home__b {
+    .profile {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  /* section-c */
+  #home__c {
+    .process {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  /* main-nav */
+  .main-nav {
+    &__logo {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  /* Header */
+  .header {
+    &--home {
+      height: 40vh;
+      .header-content {
+        display: none;
+      }
+    }
+  }
+}
+
+@include respond(large) {
+  html {
+    font-size: 55%;
+  }
+
+  /* main-nav */
+  .main-nav {
+    &__logo {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+
+  /* Header */
+  .header {
+    &--home {
+      height: 15vh;
+    }
+  }
+}
+
+@include respond(medium) {
+  html {
+    font-size: 50%;
+  }
+  /* main-nav */
+  .main-nav {
+    font-size: 70%;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    &__items {
+      gap: 0.5rem;
+      justify-content: center;
+    }
+  }
+
+  /* footer */
+  #main-footer {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.5rem;
+      p {
+        letter-spacing: 0;
+        word-spacing: 0;
+      }
+    }
+    .social {
+      i {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@include respond(small) {
+  html {
+    font-size: 30%;
+  }
+  /* HOME */
+  /* section-a */
+  #home__a {
+    .skills {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  /* section-b */
+  #home__b {
+    .profile {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  /* section-c */
+  #home__c {
+    .process {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  /* main-nav */
+  .main-nav {
+    font-size: 50%;
+    flex-direction: column;
+    align-items: center;
+
+    &__logo {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    &__items {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  /* Header */
+  .header {
+    &--home {
+      height: 10vh;
+    }
+  }
+
+  /* footer */
+  #main-footer {
+    .footer-content {
+      font-size: 1.2rem;
+    }
+    .social {
+      i {
+        font-size: 0.5rem;
+      }
+    }
+  }
+}

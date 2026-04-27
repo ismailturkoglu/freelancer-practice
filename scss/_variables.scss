@@ -10,3 +10,10 @@ $max-width: 120rem;
 // Fonts
 $lato-font: "Lato";
 $open-sans-font: "Open Sans";
+
+$breakpoints: (
+  "small": 300px,
+  "medium": 576px,
+  "large": 768px,
+  "xl": 992px,
+);

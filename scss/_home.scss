@@ -1,103 +1,100 @@
 /* ======================== Home ======================= */
 @use "variables";
 
-#home {
-  /* section-a */
-  &__a {
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 5rem;
+/* section-a */
+#home__a {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
 
-      i {
-        color: variables.$primary-color;
+    i {
+      color: variables.$primary-color;
+    }
+    h2 {
+      margin-top: 2rem;
+    }
+  }
+}
+
+/* section-b */
+#home__b {
+  .profile {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    div {
+      padding: 3rem 0;
+
+      &:nth-child(even) {
+        background-color: variables.$dark-color;
       }
-      h2 {
-        margin-top: 2rem;
+      &:nth-child(odd) {
+        background-color: variables.$light-color;
+      }
+    }
+
+    li {
+      &.title {
+        font-size: 2.4rem;
+      }
+
+      &.number {
+        font-size: 4rem;
+        font-weight: 800;
       }
     }
   }
+}
 
-  /* section-b */
-  &__b {
-    .profile {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+/* section-c */
+#home__c {
+  .process {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
 
-      div {
-        padding: 3rem 0;
+    i {
+      margin-bottom: 1rem;
+      width: 12rem;
+      border: 0.2rem black solid;
+      border-radius: 50%;
+      padding: 2rem;
+      transition:
+        background-color 0.5s,
+        color 0.2s;
 
-        &:nth-child(even) {
-          background-color: variables.$dark-color;
-        }
-        &:nth-child(odd) {
-          background-color: variables.$light-color;
-        }
-      }
-
-      li {
-        &.title {
-          font-size: 2.4rem;
-        }
-
-        &.number {
-          font-size: 4rem;
-          font-weight: 800;
-        }
-      }
-    }
-  }
-
-  /* section-c */
-  &__c {
-    .process {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 5rem;
-
-      i {
-        margin-bottom: 1rem;
-        width: 12rem;
-        border: 0.2rem black solid;
-        border-radius: 50%;
-        padding: 2rem;
+      .process__no {
         transition:
           background-color 0.5s,
           color 0.2s;
-
-        .process__no {
-          transition:
-            background-color 0.5s,
-            color 0.2s;
-        }
-
-        &:hover {
-          background-color: variables.$primary-color;
-          color: #fff;
-        }
-
-        &:hover .process__no {
-          background-color: variables.$black-color;
-          color: #fff;
-        }
       }
 
-      &__icon {
-        // background-color: variables.$light-color;
-        position: relative;
-      }
-      &__no {
-        width: 4rem;
-        height: 4rem;
-        padding: 1rem;
-        font-size: 2rem;
-        border: 0.2rem solid black;
-        border-radius: 50%;
+      &:hover {
         background-color: variables.$primary-color;
-        position: absolute;
-        top: 0rem;
-        left: 8rem;
+        color: #fff;
       }
+
+      &:hover .process__no {
+        background-color: variables.$black-color;
+        color: #fff;
+      }
+    }
+
+    &__icon {
+      position: relative;
+    }
+    &__no {
+      width: 4rem;
+      height: 4rem;
+      padding: 1rem;
+      font-size: 2rem;
+      border: 0.2rem solid black;
+      border-radius: 50%;
+      background-color: variables.$primary-color;
+      position: absolute;
+      top: 0rem;
+      left: 8rem;
     }
   }
 }
