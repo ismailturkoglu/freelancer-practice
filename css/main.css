@@ -610,6 +610,26 @@ p {
   object-fit: contain;
 }
 
+/* ================ Projects Responsive ================ */
+@media (max-width: 576px) {
+  #projects .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 300px) {
+  #projects .projects__grid {
+    grid-template-columns: 1fr;
+  }
+  #projects .projects__grid div p,
+  #projects .projects__grid div h3 {
+    margin: 0;
+    padding: 0;
+  }
+  #projects .projects__grid div img {
+    max-width: 40rem;
+    max-height: 14rem;
+  }
+}
 /* ====================== Contact ====================== */
 /* section-a */
 #contact__form .form-fields {

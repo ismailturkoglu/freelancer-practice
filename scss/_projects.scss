@@ -1,5 +1,7 @@
 /* ====================== Projects ===================== */
 @use "variables";
+@use "sass:map";
+@use "responsive" as *;
 
 #projects {
   .projects__grid {
@@ -47,4 +49,39 @@
   max-width: 50vw;
   max-height: 50vh;
   object-fit: contain;
+}
+
+/* ================ Projects Responsive ================ */
+
+@include respond(xl) {
+}
+
+@include respond(large) {
+}
+
+@include respond(medium) {
+  #projects {
+    .projects__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@include respond(small) {
+  #projects {
+    .projects__grid {
+      grid-template-columns: 1fr;
+      div {
+        p,
+        h3 {
+          margin: 0;
+          padding: 0;
+        }
+        img {
+          max-width: 40rem;
+          max-height: 14rem;
+        }
+      }
+    }
+  }
 }
