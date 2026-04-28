@@ -636,7 +636,7 @@ p {
   display: grid;
   grid-template-areas: "full-name email" "subject phone" "message message" "submit submit";
   gap: 1rem;
-  padding: 2rem;
+  padding: 3.5rem;
 }
 #contact__form .form-fields #full-name {
   height: 3rem;
@@ -686,6 +686,34 @@ p {
   padding: 0;
 }
 
+/* ================= Contact Responsive ================ */
+@media (max-width: 992px) {
+  /* section-a */
+  #contact__form {
+    padding: 9rem 4rem;
+  }
+}
+@media (max-width: 768px) {
+  /* section-a */
+  #contact__form {
+    padding: 14rem 4rem;
+  }
+}
+@media (max-width: 576px) {
+  /* section-a */
+  #contact__form {
+    padding: 0;
+  }
+  #contact__form .form-fields {
+    grid-template-areas: "full-name" "email" "subject" "phone" "message" "submit";
+  }
+  #contact__form .form-fields > * {
+    min-width: 0;
+  }
+  #contact__form .form-fields input::placeholder {
+    font-size: 2.2rem;
+  }
+}
 /* ======================= Footer ====================== */
 #main-footer .footer-content {
   display: flex;
