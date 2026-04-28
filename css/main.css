@@ -543,6 +543,32 @@ p {
   border-radius: 50%;
 }
 
+/* ================== About Responsive ================= */
+@media (max-width: 768px) {
+  /* section-c */
+  #about-c .about-logos {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 0;
+  }
+  #about-c .about-logos img {
+    max-width: 8rem;
+  }
+}
+@media (max-width: 576px) {
+  /* section-c */
+  /* section-a */
+  #about-a .wrap {
+    grid-template-columns: 1fr;
+  }
+  #about-a .wrap img {
+    max-width: 30rem;
+    justify-self: center;
+  }
+  #about-a .wrap h3 {
+    text-align: center;
+  }
+}
 /* ====================== Projects ===================== */
 #projects .projects__grid {
   display: grid;

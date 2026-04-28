@@ -1,5 +1,7 @@
 /* ======================= About ====================== */
 @use "variables";
+@use "sass:map";
+@use "responsive" as *;
 
 /* section-a */
 #about-a {
@@ -65,4 +67,50 @@
       }
     }
   }
+}
+
+/* ================== About Responsive ================= */
+
+@include respond(xl) {
+}
+
+@include respond(large) {
+  /* section-c */
+  #about-c {
+    .about-logos {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      gap: 0;
+      img {
+        max-width: 8rem;
+      }
+    }
+  }
+}
+
+@include respond(medium) {
+  /* section-c */
+  #about-c {
+    .about-logos {
+      img {
+      }
+    }
+  }
+
+  /* section-a */
+  #about-a {
+    .wrap {
+      grid-template-columns: 1fr;
+      img {
+        max-width: 30rem;
+        justify-self: center;
+      }
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include respond(small) {
 }
