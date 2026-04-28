@@ -1,4 +1,5 @@
-/* ==================== Responsive ===================== */
+/* ================= Responsive Common ================= */
+
 @use "variables";
 @use "sass:map";
 
@@ -23,74 +24,11 @@
   div[class*="py-"] {
     padding: 1rem 0;
   }
-
-  /* HOME */
-  /* section-a */
-  #home__a {
-    .skills {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-  }
-
-  /* section-b */
-  #home__b {
-    .profile {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-  }
-
-  /* section-c */
-  #home__c {
-    .process {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
-    }
-  }
-
-  /* main-nav */
-  .main-nav {
-    padding: 1rem;
-    &__logo {
-      width: 10rem;
-      height: 10rem;
-    }
-  }
-
-  /* Header */
-  .header {
-    &--home {
-      height: 40vh;
-      .header-content {
-        display: none;
-      }
-    }
-    &--small {
-      // height: 40vh;
-    }
-  }
-
-  /* footer */
-  #main-footer {
-    .footer-content {
-      margin: 0 auto;
-      padding: 2rem;
-    }
-  }
 }
 
 @include respond(large) {
   html {
     font-size: 55%;
-  }
-
-  /* main-nav */
-  .main-nav {
-    &__logo {
-      width: 8rem;
-      height: 8rem;
-    }
   }
 }
 
@@ -98,122 +36,10 @@
   html {
     font-size: 50%;
   }
-  /* main-nav */
-  .main-nav {
-    font-size: 70%;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 3rem;
-
-    a {
-      align-self: flex-start;
-    }
-    &__logo {
-      width: 8rem;
-      height: 8rem;
-    }
-
-    &__items {
-      gap: 0;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
-
-  /* Header */
-  .header {
-    &--home {
-      height: auto;
-    }
-  }
-
-  /* footer */
-  #main-footer {
-    .footer-content {
-      flex-direction: column;
-      align-items: center;
-      font-size: 1.5rem;
-      p {
-        letter-spacing: 0;
-        word-spacing: 0;
-        padding: 0;
-        margin: 0;
-      }
-    }
-    .social {
-      i {
-        font-size: 1rem;
-      }
-    }
-  }
 }
 
 @include respond(small) {
   html {
     font-size: 30%;
-  }
-  /* HOME */
-  /* section-a */
-  #home__a {
-    .skills {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-  }
-
-  /* section-b */
-  #home__b {
-    .profile {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-  }
-
-  /* section-c */
-  #home__c {
-    .process {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-  }
-
-  /* main-nav */
-  .main-nav {
-    font-size: 50%;
-    flex-direction: row;
-    align-items: center;
-    padding: 4rem;
-
-    a {
-      align-self: flex-start;
-    }
-    &__logo {
-      width: 5rem;
-      height: 5rem;
-    }
-
-    &__items {
-      flex-direction: column;
-      gap: 0;
-    }
-  }
-
-  /* Header */
-  .header {
-    &--home {
-      height: auto;
-    }
-  }
-
-  /* footer */
-  #main-footer {
-    .footer-content {
-      font-size: 1.2rem;
-    }
-    .social {
-      i {
-        font-size: 0.5rem;
-      }
-    }
   }
 }

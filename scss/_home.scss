@@ -1,5 +1,7 @@
 /* ======================== Home ======================= */
 @use "variables";
+@use "sass:map";
+@use "responsive" as *;
 
 /* section-a */
 #home__a {
@@ -95,6 +97,66 @@
       position: absolute;
       top: 0rem;
       left: 8rem;
+    }
+  }
+}
+
+/* ================== Home Responsive ================== */
+
+@include respond(xl) {
+  /* section-a */
+  #home__a {
+    .skills {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  /* section-b */
+  #home__b {
+    .profile {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  /* section-c */
+  #home__c {
+    .process {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+}
+
+@include respond(large) {
+}
+
+@include respond(medium) {
+}
+
+@include respond(small) {
+  /* section-a */
+  #home__a {
+    .skills {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  /* section-b */
+  #home__b {
+    .profile {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+  /* section-c */
+  #home__c {
+    .process {
+      grid-template-columns: 1fr;
+      gap: 1rem;
     }
   }
 }

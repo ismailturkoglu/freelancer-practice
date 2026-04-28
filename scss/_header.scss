@@ -1,5 +1,7 @@
 /* ====================== Header ====================== */
 @use "variables";
+@use "sass:map";
+@use "responsive" as *;
 
 /* main-nav */
 .main-nav {
@@ -71,5 +73,102 @@
       linear-gradient(to bottom, #494b5298, #74c7cf29),
       url("../img/bg.jpg") no-repeat 30% 25% / cover;
     color: #fff;
+  }
+}
+
+/* ================= Header Responsive ================= */
+
+@include respond(xl) {
+  /* main-nav */
+  .main-nav {
+    padding: 1rem;
+    &__logo {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  /* Header */
+  .header {
+    &--home {
+      height: 40vh;
+      .header-content {
+        display: none;
+      }
+    }
+    &--small {
+      height: auto;
+    }
+  }
+}
+
+@include respond(large) {
+  /* main-nav */
+  .main-nav {
+    &__logo {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+}
+
+@include respond(medium) {
+  /* main-nav */
+  .main-nav {
+    font-size: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3rem;
+
+    a {
+      align-self: flex-start;
+    }
+    &__logo {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    &__items {
+      gap: 0;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  /* Header */
+  .header {
+    &--home {
+      height: auto;
+    }
+  }
+}
+
+@include respond(small) {
+  /* main-nav */
+  .main-nav {
+    font-size: 50%;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem;
+
+    a {
+      align-self: flex-start;
+    }
+    &__logo {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    &__items {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  /* Header */
+  .header {
+    &--home {
+      height: auto;
+    }
   }
 }

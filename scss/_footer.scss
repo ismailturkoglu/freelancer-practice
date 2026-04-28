@@ -1,5 +1,7 @@
 /* ======================= Footer ====================== */
 @use "variables";
+@use "sass:map";
+@use "responsive" as *;
 
 #main-footer {
   .footer-content {
@@ -25,6 +27,57 @@
 
       &:hover {
         background-color: variables.$primary-color;
+      }
+    }
+  }
+}
+
+/* ================= Footer Responsive ================= */
+
+@include respond(xl) {
+  /* footer */
+  #main-footer {
+    .footer-content {
+      margin: 0 auto;
+      padding: 2rem;
+    }
+  }
+}
+
+@include respond(large) {
+}
+
+@include respond(medium) {
+  /* footer */
+  #main-footer {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.5rem;
+      p {
+        letter-spacing: 0;
+        word-spacing: 0;
+        padding: 0;
+        margin: 0;
+      }
+    }
+    .social {
+      i {
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@include respond(small) {
+  /* footer */
+  #main-footer {
+    .footer-content {
+      font-size: 1.2rem;
+    }
+    .social {
+      i {
+        font-size: 0.5rem;
       }
     }
   }
