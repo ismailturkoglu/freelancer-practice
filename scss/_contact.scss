@@ -104,12 +104,21 @@
       > * {
         min-width: 0;
       }
-      input::placeholder {
-        font-size: 2.2rem;
-      }
     }
   }
 }
 
 @include respond(small) {
+  /* section-a */
+  #contact__form {
+    input::placeholder {
+      font-size: 1.8rem;
+    }
+  }
+  /* section-b */
+  #contact__info {
+    .info-box p {
+      font-size: 1.4rem;
+    }
+  }
 }

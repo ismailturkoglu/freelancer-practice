@@ -710,8 +710,15 @@ p {
   #contact__form .form-fields > * {
     min-width: 0;
   }
-  #contact__form .form-fields input::placeholder {
-    font-size: 2.2rem;
+}
+@media (max-width: 300px) {
+  /* section-a */
+  #contact__form input::placeholder {
+    font-size: 1.8rem;
+  }
+  /* section-b */
+  #contact__info .info-box p {
+    font-size: 1.4rem;
   }
 }
 /* ======================= Footer ====================== */
