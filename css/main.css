@@ -566,6 +566,11 @@ p {
   .header--home .header-content {
     display: none;
   }
+  /* footer */
+  #main-footer .footer-content {
+    margin: 0 auto;
+    padding: 2rem;
+  }
 }
 @media (max-width: 768px) {
   html {
@@ -575,10 +580,6 @@ p {
   .main-nav__logo {
     width: 8rem;
     height: 8rem;
-  }
-  /* Header */
-  .header--home {
-    height: 15vh;
   }
 }
 @media (max-width: 576px) {
@@ -599,6 +600,10 @@ p {
     gap: 0.5rem;
     justify-content: center;
   }
+  /* Header */
+  .header--home {
+    height: 25vh;
+  }
   /* footer */
   #main-footer .footer-content {
     flex-direction: column;
@@ -608,6 +613,8 @@ p {
   #main-footer .footer-content p {
     letter-spacing: 0;
     word-spacing: 0;
+    padding: 0;
+    margin: 0;
   }
   #main-footer .social i {
     font-size: 1rem;
