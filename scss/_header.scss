@@ -71,7 +71,7 @@
   &--small {
     background:
       linear-gradient(to bottom, #494b5298, #74c7cf29),
-      url("../img/bg.jpg") no-repeat 30% 25% / cover;
+      url("../img/bg.jpg") no-repeat left top / cover;
     color: #fff;
   }
 }
