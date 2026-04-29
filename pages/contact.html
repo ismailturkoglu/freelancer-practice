@@ -40,15 +40,16 @@
             <h2 class="section-title">Contact Me</h2>
             <div class="border-bottom"></div>
             <p class="lead">Lorem ipsum dolor sit.</p>
-            <form action="https://formspree.io/f/mkokdyoj" method="POST">
-                <!-- <form name="contact" method="POST" data-netlify="true"> -->
-                <!-- <form name="contact" method="POST" netlify> -->
+            <!-- <form action="https://formspree.io/f/mkokdyoj" method="POST"> -->
+            <!-- <form name="contact" method="POST" data-netlify="true"> -->
+            <form name="contact" method="POST" netlify data-netlify-recaptcha="true">
                 <div class="form-fields">
                     <input type="text" name="full-name" id="full-name" placeholder="Name">
                     <input type="email" name="email" id="email" placeholder="Email">
                     <input type="text" name="subject" id="subject" placeholder="Subject">
                     <input type="tel" name="phone" id="phone" placeholder="Phone (05xx xxx xx xx)" maxlength="14">
                     <textarea name="message" id="message" placeholder="Message"></textarea>
+                    <div data-netlify-recaptcha="true"></div>
                     <button type="submit" id="submit">
                         Submit
                     </button>
