@@ -1,4 +1,4 @@
-# Portfolio
+# Freelancer - Practice Project
 
 This is a multi-page personal portfolio project built using HTML, CSS (SCSS) and basic JavaScript. The goal of this project is to practice responsive web design, SCSS structure, and basic frontend interactions.
 
