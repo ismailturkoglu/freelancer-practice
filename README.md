@@ -41,3 +41,9 @@ This project includes a working contact form powered by Formspree.
 
 ## 📌 Note
 This is a learning project focused on frontend fundamentals before moving to more advanced frameworks like Bootstrap, JavaScript frameworks, and React.
+
+## Author
+
+**İsmail Türkoğlu**
+
+- GitHub: [@ismailturkoglu](https://github.com/ismailturkoglu)
